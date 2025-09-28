@@ -49,3 +49,26 @@ td{min-width:130px;height:72px}
   td{min-width:100px}
   .actions{gap:6px}
 }
+
+/* Styles for the two-planner layout */
+.planner-wrapper{
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+.planner-container{
+  flex: 1;
+  min-width: 0;
+}
+.planner-container h4{
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Responsive adjustments for the planner layout */
+@media (max-width: 1200px){
+  .planner-wrapper{
+    flex-direction: column;
+  }
+}
