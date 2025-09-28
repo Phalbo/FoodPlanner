@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meal Planner V2 – Responsive + XML</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Planner settimanale</h1>
+    <div class="actions">
+      <button id="btnClear" class="ghost">Svuota</button>
+      <button id="btnExport" class="ghost">Esporta JSON</button>
+      <button id="btnImport" class="ghost">Importa JSON</button>
+      <button id="btnShop" class="primary">Lista spesa</button>
+    </div>
+  </header>
+
+  <section class="controls">
+    <div class="control">
+      <label>Adulti</label>
+      <input id="adults" type="number" min="0" value="1" />
+    </div>
+    <div class="control">
+      <label>Bambini</label>
+      <input id="children" type="number" min="0" value="1" />
+    </div>
+    <div class="control">
+      <label>Escludi allergeni</label>
+      <div id="allergenFilters" class="chips"></div>
+    </div>
+  </section>
+
+  <main class="layout">
+    <aside class="panel">
+      <h2>Dispensa</h2>
+      <div id="categoryTabs" class="tabs"></div>
+      <div class="toolbar">
+        <button id="btnRandomCategory" class="ghost">🎲 Random categoria</button>
+        <span id="visibleCount" class="muted"></span>
+      </div>
+      <div id="items" class="items"></div>
+    </aside>
+
+    <section class="panel">
+      <div class="planner-head">
+        <div class="legend muted">Doppio tap su uno slot per random. Max 2 carbo di fila. Max 2 ripetizioni/sett.</div>
+        <div class="totals">
+          <div>Calorie/adulto: <span id="kcalAdult">0</span>/giorno</div>
+          <div>Calorie/bambino: <span id="kcalChild">0</span>/giorno</div>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table id="planner"></table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shopping Drawer -->
+  <section id="shopDrawer" class="drawer hidden">
+    <div class="drawer-content">
+      <div class="drawer-head">
+        <h3>Lista della spesa (settimanale)</h3>
+        <button id="closeShop" class="ghost">✕</button>
+      </div>
+      <div id="shopList"></div>
+      <div class="drawer-actions">
+        <button id="copyShop" class="primary">Copia</button>
+        <button id="downloadShop" class="ghost">Scarica TXT</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fallback XML nel caso non carichi foods.xml -->
+  <script type="application/xml" id="foodsFallback">
+    <foods>
+      <item name="Pasta integrale" cat="carboidrati" allergens="glutine" kcal100="350" portion_adult_g="80" portion_child_g="60" />
+      <item name="Riso basmati" cat="carboidrati" allergens="" kcal100="350" portion_adult_g="80" portion_child_g="60" />
+      <item name="Patate al forno" cat="carboidrati" allergens="" kcal100="95" portion_adult_g="200" portion_child_g="150" />
+      <item name="Petto di pollo" cat="proteine" allergens="" kcal100="165" portion_adult_g="150" portion_child_g="100" />
+      <item name="Insalata mista" cat="verdure" allergens="" kcal100="20" portion_adult_g="120" portion_child_g="90" />
+    </foods>
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>

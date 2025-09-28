@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foods>
+  <!-- cat: carboidrati / proteine / verdure / grassi / bevande -->
+  <!-- kcal100 = kcal per 100 g (o ml per le bevande); portion_*_g = porzione suggerita in grammi/ml -->
+
+  <!-- CARBOIDRATI -->
+  <item name="Pasta integrale" cat="carboidrati" allergens="glutine" kcal100="350" portion_adult_g="80" portion_child_g="60" />
+  <item name="Riso basmati" cat="carboidrati" allergens="" kcal100="350" portion_adult_g="80" portion_child_g="60" />
+  <item name="Pane di segale" cat="carboidrati" allergens="glutine" kcal100="259" portion_adult_g="50" portion_child_g="40" />
+  <item name="Patate al forno" cat="carboidrati" allergens="" kcal100="95" portion_adult_g="200" portion_child_g="150" />
+  <item name="Fiocchi d'avena" cat="carboidrati" allergens="glutine,nickel" kcal100="380" portion_adult_g="50" portion_child_g="40" />
+
+  <!-- PROTEINE -->
+  <item name="Petto di pollo" cat="proteine" allergens="" kcal100="165" portion_adult_g="150" portion_child_g="100" />
+  <item name="Uova sode" cat="proteine" allergens="uova" kcal100="155" portion_adult_g="100" portion_child_g="70" />
+  <item name="Tonno in vetro" cat="proteine" allergens="pesce" kcal100="160" portion_adult_g="120" portion_child_g="80" />
+  <item name="Lenticchie decorticate" cat="proteine" allergens="nickel" kcal100="350" portion_adult_g="70" portion_child_g="50" />
+  <item name="Yogurt vegetale con bifidus" cat="proteine" allergens="" kcal100="60" portion_adult_g="125" portion_child_g="100" />
+
+  <!-- VERDURE -->
+  <item name="Insalata mista" cat="verdure" allergens="" kcal100="20" portion_adult_g="120" portion_child_g="90" />
+  <item name="Zucchine grigliate" cat="verdure" allergens="nickel" kcal100="17" portion_adult_g="150" portion_child_g="110" />
+  <item name="Carote al vapore" cat="verdure" allergens="" kcal100="36" portion_adult_g="120" portion_child_g="90" />
+  <item name="Finocchi crudi" cat="verdure" allergens="" kcal100="31" portion_adult_g="120" portion_child_g="90" />
+
+  <!-- GRASSI / CONDIMENTI -->
+  <item name="Olio EVO" cat="grassi" allergens="" kcal100="884" portion_adult_g="10" portion_child_g="5" />
+  <item name="Frutta secca mista" cat="grassi" allergens="frutta_a_guscio,nickel" kcal100="600" portion_adult_g="25" portion_child_g="15" />
+  <item name="Avocado" cat="grassi" allergens="" kcal100="160" portion_adult_g="80" portion_child_g="60" />
+
+  <!-- BEVANDE -->
+  <item name="Rooibos caldo" cat="bevande" allergens="" kcal100="0" portion_adult_g="250" portion_child_g="200" />
+  <item name="Acqua tonica con lime" cat="bevande" allergens="" kcal100="35" portion_adult_g="250" portion_child_g="200" />
+  <item name="Kombucha" cat="bevande" allergens="" kcal100="20" portion_adult_g="200" portion_child_g="150" />
+</foods>
