@@ -1,35 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <foods>
-  <!-- cat: carboidrati / proteine / verdure / grassi / bevande -->
-  <!-- kcal100 = kcal per 100 g (o ml per le bevande); portion_*_g = porzione suggerita in grammi/ml -->
+  <!--
+    cat: carboidrati / proteine / verdure / frutta / grassi / latticini / bevande / snack / zuppe / condimenti
+    kcal100 = kcal per 100 g (o ml per le bevande)
+    portion_adult_g = porzione suggerita in grammi/ml
+    portion_child_g = porzione suggerita in grammi/ml
+  -->
 
   <!-- CARBOIDRATI -->
-  <item name="Pasta integrale" cat="carboidrati" allergens="glutine" kcal100="350" portion_adult_g="80" portion_child_g="60" />
-  <item name="Riso basmati" cat="carboidrati" allergens="" kcal100="350" portion_adult_g="80" portion_child_g="60" />
-  <item name="Pane di segale" cat="carboidrati" allergens="glutine" kcal100="259" portion_adult_g="50" portion_child_g="40" />
-  <item name="Patate al forno" cat="carboidrati" allergens="" kcal100="95" portion_adult_g="200" portion_child_g="150" />
-  <item name="Fiocchi d'avena" cat="carboidrati" allergens="glutine,nickel" kcal100="380" portion_adult_g="50" portion_child_g="40" />
+  <item name="Pasta integrale" cat="carboidrati" allergens="glutine" kcal100="347" portion_adult_g="80" portion_child_g="60" />
+  <item name="Riso basmati" cat="carboidrati" allergens="" kcal100="365" portion_adult_g="80" portion_child_g="60" />
+  <item name="Pane di segale" cat="carboidrati" allergens="glutine" kcal100="259" portion_adult_g="50" portion_child_g="30" />
+  <item name="Patate" cat="carboidrati" allergens="" kcal100="77" portion_adult_g="200" portion_child_g="150" />
+  <item name="Fiocchi d'avena" cat="carboidrati" allergens="glutine" kcal100="389" portion_adult_g="40" portion_child_g="30" />
+  <item name="Quinoa" cat="carboidrati" allergens="" kcal100="368" portion_adult_g="70" portion_child_g="50" />
+  <item name="Couscous" cat="carboidrati" allergens="glutine" kcal100="376" portion_adult_g="80" portion_child_g="60" />
+  <item name="Farro perlato" cat="carboidrati" allergens="glutine" kcal100="335" portion_adult_g="70" portion_child_g="50" />
+  <item name="Gallette di riso" cat="carboidrati" allergens="" kcal100="387" portion_adult_g="30" portion_child_g="20" />
+  <item name="Polenta" cat="carboidrati" allergens="" kcal100="85" portion_adult_g="150" portion_child_g="120" />
+  <item name="Pane azzimo" cat="carboidrati" allergens="glutine" kcal100="377" portion_adult_g="40" portion_child_g="30" />
+  <item name="Patate dolci" cat="carboidrati" allergens="" kcal100="86" portion_adult_g="200" portion_child_g="150" />
+  <item name="Grano saraceno" cat="carboidrati" allergens="" kcal100="343" portion_adult_g="70" portion_child_g="50" />
 
   <!-- PROTEINE -->
   <item name="Petto di pollo" cat="proteine" allergens="" kcal100="165" portion_adult_g="150" portion_child_g="100" />
-  <item name="Uova sode" cat="proteine" allergens="uova" kcal100="155" portion_adult_g="100" portion_child_g="70" />
-  <item name="Tonno in vetro" cat="proteine" allergens="pesce" kcal100="160" portion_adult_g="120" portion_child_g="80" />
-  <item name="Lenticchie decorticate" cat="proteine" allergens="nickel" kcal100="350" portion_adult_g="70" portion_child_g="50" />
-  <item name="Yogurt vegetale con bifidus" cat="proteine" allergens="" kcal100="60" portion_adult_g="125" portion_child_g="100" />
+  <item name="Salmone" cat="proteine" allergens="pesce" kcal100="208" portion_adult_g="120" portion_child_g="80" />
+  <item name="Uova" cat="proteine" allergens="uova" kcal100="155" portion_adult_g="100" portion_child_g="50" />
+  <item name="Tonno al naturale" cat="proteine" allergens="pesce" kcal100="116" portion_adult_g="80" portion_child_g="50" />
+  <item name="Lenticchie" cat="proteine" allergens="" kcal100="116" portion_adult_g="150" portion_child_g="100" />
+  <item name="Ceci" cat="proteine" allergens="" kcal100="139" portion_adult_g="150" portion_child_g="100" />
+  <item name="Tofu" cat="proteine" allergens="soia" kcal100="76" portion_adult_g="100" portion_child_g="70" />
+  <item name="Fagioli neri" cat="proteine" allergens="" kcal100="132" portion_adult_g="150" portion_child_g="100" />
+  <item name="Manzo macinato" cat="proteine" allergens="" kcal100="250" portion_adult_g="120" portion_child_g="80" />
+  <item name="Merluzzo" cat="proteine" allergens="pesce" kcal100="82" portion_adult_g="150" portion_child_g="100" />
+  <item name="Tempeh" cat="proteine" allergens="soia" kcal100="193" portion_adult_g="100" portion_child_g="70" />
+  <item name="Gamberetti" cat="proteine" allergens="crostacei" kcal100="99" portion_adult_g="100" portion_child_g="70" />
+  <item name="Sgombro" cat="proteine" allergens="pesce" kcal100="205" portion_adult_g="130" portion_child_g="90" />
 
   <!-- VERDURE -->
-  <item name="Insalata mista" cat="verdure" allergens="" kcal100="20" portion_adult_g="120" portion_child_g="90" />
-  <item name="Zucchine grigliate" cat="verdure" allergens="nickel" kcal100="17" portion_adult_g="150" portion_child_g="110" />
-  <item name="Carote al vapore" cat="verdure" allergens="" kcal100="36" portion_adult_g="120" portion_child_g="90" />
-  <item name="Finocchi crudi" cat="verdure" allergens="" kcal100="31" portion_adult_g="120" portion_child_g="90" />
+  <item name="Insalata mista" cat="verdure" allergens="" kcal100="15" portion_adult_g="100" portion_child_g="50" />
+  <item name="Zucchine" cat="verdure" allergens="" kcal100="17" portion_adult_g="200" portion_child_g="150" />
+  <item name="Carote" cat="verdure" allergens="" kcal100="41" portion_adult_g="100" portion_child_g="70" />
+  <item name="Finocchi" cat="verdure" allergens="" kcal100="31" portion_adult_g="150" portion_child_g="100" />
+  <item name="Spinaci" cat="verdure" allergens="" kcal100="23" portion_adult_g="150" portion_child_g="100" />
+  <item name="Broccoli" cat="verdure" allergens="" kcal100="34" portion_adult_g="150" portion_child_g="100" />
+  <item name="Pomodori" cat="verdure" allergens="nickel" kcal100="18" portion_adult_g="150" portion_child_g="100" />
+  <item name="Peperoni" cat="verdure" allergens="" kcal100="20" portion_adult_g="100" portion_child_g="70" />
+  <item name="Melanzane" cat="verdure" allergens="nickel" kcal100="25" portion_adult_g="200" portion_child_g="150" />
+  <item name="Cetrioli" cat="verdure" allergens="" kcal100="15" portion_adult_g="100" portion_child_g="70" />
+  <item name="Cavolfiore" cat="verdure" allergens="" kcal100="25" portion_adult_g="150" portion_child_g="100" />
+  <item name="Asparagi" cat="verdure" allergens="" kcal100="20" portion_adult_g="150" portion_child_g="100" />
+  <item name="Funghi" cat="verdure" allergens="" kcal100="22" portion_adult_g="100" portion_child_g="70" />
 
-  <!-- GRASSI / CONDIMENTI -->
+  <!-- FRUTTA -->
+  <item name="Mela" cat="frutta" allergens="" kcal100="52" portion_adult_g="150" portion_child_g="100" />
+  <item name="Banana" cat="frutta" allergens="" kcal100="89" portion_adult_g="120" portion_child_g="80" />
+  <item name="Arancia" cat="frutta" allergens="" kcal100="47" portion_adult_g="150" portion_child_g="120" />
+  <item name="Fragole" cat="frutta" allergens="nickel" kcal100="32" portion_adult_g="150" portion_child_g="100" />
+  <item name="Mirtilli" cat="frutta" allergens="" kcal100="57" portion_adult_g="80" portion_child_g="50" />
+  <item name="Pera" cat="frutta" allergens="" kcal100="57" portion_adult_g="150" portion_child_g="100" />
+  <item name="Kiwi" cat="frutta" allergens="" kcal100="61" portion_adult_g="100" portion_child_g="70" />
+  <item name="Pesca" cat="frutta" allergens="" kcal100="39" portion_adult_g="150" portion_child_g="100" />
+  <item name="Uva" cat="frutta" allergens="" kcal100="69" portion_adult_g="100" portion_child_g="70" />
+
+  <!-- GRASSI E CONDIMENTI -->
   <item name="Olio EVO" cat="grassi" allergens="" kcal100="884" portion_adult_g="10" portion_child_g="5" />
-  <item name="Frutta secca mista" cat="grassi" allergens="frutta_a_guscio,nickel" kcal100="600" portion_adult_g="25" portion_child_g="15" />
-  <item name="Avocado" cat="grassi" allergens="" kcal100="160" portion_adult_g="80" portion_child_g="60" />
+  <item name="Frutta secca" cat="grassi" allergens="frutta_a_guscio,nickel" kcal100="607" portion_adult_g="20" portion_child_g="10" />
+  <item name="Avocado" cat="grassi" allergens="" kcal100="160" portion_adult_g="50" portion_child_g="30" />
+  <item name="Olive" cat="grassi" allergens="" kcal100="115" portion_adult_g="30" portion_child_g="15" />
+  <item name="Semi di lino" cat="grassi" allergens="" kcal100="534" portion_adult_g="10" portion_child_g="5" />
+  <item name="Semi di chia" cat="grassi" allergens="" kcal100="486" portion_adult_g="10" portion_child_g="5" />
+  <item name="Burro di arachidi" cat="grassi" allergens="arachidi" kcal100="588" portion_adult_g="20" portion_child_g="10" />
+
+  <!-- LATTICINI -->
+  <item name="Yogurt greco" cat="latticini" allergens="latticini" kcal100="59" portion_adult_g="150" portion_child_g="125" />
+  <item name="Latte" cat="latticini" allergens="latticini" kcal100="42" portion_adult_g="200" portion_child_g="150" />
+  <item name="Formaggio spalmabile" cat="latticini" allergens="latticini" kcal100="253" portion_adult_g="50" portion_child_g="30" />
+  <item name="Parmigiano" cat="latticini" allergens="latticini" kcal100="431" portion_adult_g="20" portion_child_g="10" />
+  <item name="Feta" cat="latticini" allergens="latticini" kcal100="264" portion_adult_g="50" portion_child_g="30" />
+  <item name="Mozzarella" cat="latticini" allergens="latticini" kcal100="280" portion_adult_g="100" portion_child_g="70" />
+  <item name="Ricotta" cat="latticini" allergens="latticini" kcal100="174" portion_adult_g="80" portion_child_g="50" />
 
   <!-- BEVANDE -->
-  <item name="Rooibos caldo" cat="bevande" allergens="" kcal100="0" portion_adult_g="250" portion_child_g="200" />
-  <item name="Acqua tonica con lime" cat="bevande" allergens="" kcal100="35" portion_adult_g="250" portion_child_g="200" />
-  <item name="Kombucha" cat="bevande" allergens="" kcal100="20" portion_adult_g="200" portion_child_g="150" />
+  <item name="Acqua" cat="bevande" allergens="" kcal100="0" portion_adult_g="250" portion_child_g="200" />
+  <item name="Caffè" cat="bevande" allergens="" kcal100="1" portion_adult_g="50" portion_child_g="0" />
+  <item name="Tè verde" cat="bevande" allergens="" kcal100="1" portion_adult_g="200" portion_child_g="100" />
+  <item name="Latte di mandorla" cat="bevande" allergens="frutta_a_guscio" kcal100="17" portion_adult_g="200" portion_child_g="150" />
+
+  <!-- ZUPPE E PIATTI PRONTI -->
+  <item name="Zuppa di legumi" cat="zuppe" allergens="glutine" kcal100="95" portion_adult_g="300" portion_child_g="200" />
+  <item name="Vellutata di zucca" cat="zuppe" allergens="" kcal100="45" portion_adult_g="300" portion_child_g="250" />
+  <item name="Minestrone" cat="zuppe" allergens="" kcal100="50" portion_adult_g="300" portion_child_g="250" />
+
+  <!-- SNACK -->
+  <item name="Cioccolato fondente" cat="snack" allergens="nickel" kcal100="598" portion_adult_g="20" portion_child_g="10" />
+  <item name="Popcorn" cat="snack" allergens="" kcal100="387" portion_adult_g="25" portion_child_g="15" />
+  <item name="Hummus" cat="snack" allergens="sesamo" kcal100="166" portion_adult_g="50" portion_child_g="30" />
+  <item name="Edamame" cat="snack" allergens="soia" kcal100="122" portion_adult_g="100" portion_child_g="70" />
+
 </foods>
